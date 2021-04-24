@@ -69,12 +69,7 @@ app.post('/sendMessage', (req, res) => {
     subject: `${data.subject}`,
     html:` <b>${data.email}</b> from ${data.country} Have Interested On The Cloth which is Code is <b>${data.code}</b> This is his/her message <br/><h1>${data.message}</h1> 
      This is His/Her Number ${data.mobile}` ,
-    
-    
-   
-
-
-
+  
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
